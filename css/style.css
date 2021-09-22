@@ -1,0 +1,37 @@
+
+@media screen and ( min-width: 600px){
+    body{
+        background-image:url(../001.png);
+        background-position-y: 0px;
+        min-height: 500px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 60%;
+    }
+}
+
+@media screen and ( max-width: 600px){
+    body{
+        background-image:url(../001.png);
+        background-position-y: 0px;
+        min-height: 200px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position-x: right ;
+        background-size: 60%;
+    }
+}
+ img{
+     width: 50px;
+     
+ }
+ #one{
+     position: absolute;
+     z-index: -1;
+ }
+ #two{
+    position: absolute;
+    z-index: -1;
+}
+

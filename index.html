@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a href="index.html" class=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <span class="ml-3 text-sm">License Detector</span>
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 cursor-pointer hover:text-gray-900">Report</a>
+                <a class="mr-5 cursor-pointer hover:text-gray-900">Team</a>
+                <a class="mr-5 cursor-pointer hover:text-gray-900">About</a>
+            </nav>
+            <button onclick="clicked()"
+                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+
+            </button>
+        </div>
+    </header>
+    <hr width="40%">
+
+
+    <br><br><br>
+
+    <div class="flex flex-col text-start w-full mb-12">
+        <h2 class=" mx-5 sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Find Your Necessary Details
+            Here: </h2>
+        <label class=" mx-5 block text-m font-weight-300 font-size-1.25rem text-gray-700 flex justify-start">
+            Flask Web App For Detection Of Number Plates Using Deep Learning.
+        </label>
+    </div>
+    <br>
+    <div>
+        <form action="/index.html" method="post">
+
+            <div class="mt-1 flex justify-start px-6 pt-5 pb-6 ">
+                <div class="space-y-1 text-center">
+                    <svg class=" border-2 mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
+                        viewBox="0 0 48 48" aria-hidden="true">
+                        <path
+                            d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="flex text-sm text-gray-600 ">
+                        <label for="file-upload"
+                            class="relative cursor-pointer rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                            <span>Upload a file</span>
+                            <input id="file-upload" name="file-upload" type="file" class="sr-only">
+                        </label>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+    <div class="px-4 py-3 text-left sm:px-6">
+        <button type="submit" id="btn" onclick="clicked()"
+            class="inline-flex justify-start py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            Submit
+        </button>
+
+    </div>
+
+    <textarea name="output" id="output" cols="30" rows="2" class="border my-5 justify-center mx-5 text-sm"></textarea>
+
+    <p id="output"></p>
+    <br><br><br><br>
+    <hr>
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <img src="https://img.icons8.com/color-glass/48/000000/social-network.png" />
+        <a href="index.html" class=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
+            <span class="ml-3 text-sm text-indigo-600">Follow Our Socials.</span>
+        </a>
+        <script src="js/config.js"></script>
+</body>
+
+</html>
